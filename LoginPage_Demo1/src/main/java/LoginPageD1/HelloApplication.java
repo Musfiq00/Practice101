@@ -10,10 +10,12 @@ import javafx.scene.control.Label;
 
 import java.io.IOException;
 
+
 public class HelloApplication extends Application {
     public static Stage stage;
     private static Scene scene;
     private static String fxmlFileName;
+
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -48,6 +50,7 @@ public static void changeScene(String fxmlFileName) {
         ex.printStackTrace();
     }
 }
+
 
     @FXML
     public void changeToDashboardScene(){ HelloApplication.changeScene("login2"); }
